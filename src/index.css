@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    font-family: 'Montserrat', system-ui, sans-serif;
+    background: #001620;
+    color: #e9eef0;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3 { margin: 0; }
+  a { text-decoration: none; color: inherit; }
+  input, textarea { font-family: 'Montserrat', system-ui, sans-serif; }
+}
+
+@layer components {
+  .form-input {
+    @apply w-full bg-tealInput border border-[#2a4a59] rounded-[11px] px-[18px] py-[17px] text-[15px] font-semibold text-white outline-none transition-colors duration-200;
+  }
+  .form-input:focus {
+    border-color: #cbca3f;
+  }
+  .form-input::placeholder {
+    color: rgba(255, 255, 255, 0.35);
+  }
+}
+
+@layer utilities {
+  .msym {
+    font-family: 'Material Symbols Outlined';
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1;
+    display: inline-block;
+    letter-spacing: normal;
+    text-transform: none;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  }
+}
+
+@keyframes faqIn {
+  from { opacity: 0; transform: translateY(-6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes heroUp {
+  from { opacity: 0; transform: translateY(34px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
