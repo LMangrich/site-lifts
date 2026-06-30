@@ -11,14 +11,14 @@ import { FaqSection } from './sections/FaqSection'
 
 export const HomePage = () => {
   return (
-    <div className="min-h-screen bg-outerBg">
-      <div className="max-w-[520px] mx-auto bg-teal" style={{ position: 'relative' }}>
+    <>
+      <div>
         <Header />
-        <main>
+        <main className="bg-teal">
           <HeroSection />
-          <PlanosSection />
-          <ResultadosSection />
-          <DuvidasSection />
+           <PlanosSection />
+           <ResultadosSection />
+           <DuvidasSection />
           <EquipeSection />
           <DepoimentosSection />
           <CtaSection />
@@ -26,6 +26,6 @@ export const HomePage = () => {
         </main>
         <Footer />
       </div>
-    </div>
+    </>
   )
 }

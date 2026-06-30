@@ -1,8 +1,8 @@
 import { useState } from 'react'
-import { FAQS, CONTACT } from '../data/content'
+import { FAQS } from '../data/content.data'
 import { Reveal } from '../../../components/Reveal'
 import { Sym } from '../../../components/Sym'
-import { CHECKER } from '../../../utils/styles'
+import { Heading } from '../../../components/Heading'
 
 export const FaqSection = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null)
@@ -12,17 +12,18 @@ export const FaqSection = () => {
 
   return (
     <>
-      <section id="contato" className="bg-teal px-[24px] pt-[34px] pb-[10px]">
+      <section id="contato" className="bg-teal pt-[34px] pb-[10px]">
+        <div className="max-w-5xl mx-auto px-10">
         <Reveal>
           <div className="inline-block bg-lime px-[14px] py-[7px] rounded-[7px] mb-[16px]">
             <span className="text-[12px] font-black tracking-[1.5px] text-teal">
               PERGUNTAS FREQUENTES
             </span>
           </div>
-          <h2 className="m-0 mb-[22px] leading-[1.04]">
+          <Heading level={2} className="mb-[22px]">
             <span className="block text-[30px] font-semibold text-lime">Tudo o que você</span>
             <span className="block text-[40px] font-black text-lime">precisa saber</span>
-          </h2>
+          </Heading>
         </Reveal>
 
         <div className="flex flex-col gap-[13px]">
@@ -70,28 +71,7 @@ export const FaqSection = () => {
             )
           })}
         </div>
-      </section>
-
-      {/* Bottom CTA */}
-      <section
-        className="pt-[30px] flex flex-col items-center overflow-hidden"
-        style={CHECKER}
-      >
-        <a
-          href={CONTACT.whatsapp}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="no-underline bg-lime rounded-[13px] px-[26px] py-[17px] text-[17px] font-black tracking-[.5px] text-teal flex items-center gap-[10px] mb-[10px]"
-        >
-          <Sym name="bolt" className="text-[22px]" />
-          QUERO COMEÇAR AGORA
-        </a>
-        <img
-          src="/assets/faq-man.png"
-          alt=""
-          loading="lazy"
-          className="w-full h-auto block mt-[8px]"
-        />
+        </div>
       </section>
     </>
   )

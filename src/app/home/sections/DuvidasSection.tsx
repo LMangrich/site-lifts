@@ -1,14 +1,19 @@
 import { Reveal } from '../../../components/Reveal'
-import { DUVIDAS_STEPS } from '../data/content'
+import { DUVIDAS_STEPS } from '../data/content.data'
+import { Heading } from '../../../components/Heading'
+import cellphone from '../../../../public/assets/CELULAR.webp'
 
 export const DuvidasSection = () => {
   return (
     <section id="duvidas" className="bg-teal px-[26px] pt-[40px] pb-[36px] text-center">
+      <div className="max-w-5xl mx-auto px-10">
       <Reveal>
-        <p className="m-0 text-[24px] font-bold tracking-[1px] text-lime">PARE DE TENTAR</p>
-        <h2 className="m-0 mb-[18px] text-[62px] font-black tracking-[1px] text-lime leading-[.9]">
-          SOZINHO!
-        </h2>
+        <div className="mb-[18px] flex flex-col items-center rotate-[-2deg]">
+          <p className="m-0 text-[24px] font-bold tracking-[1px] text-lime">PARE DE TENTAR</p>
+          <Heading level={2} className="text-[62px] font-black tracking-[1px] leading-[.9]">
+            <span className="bg-lime px-3 py-1 text-teal leading-none inline-block">SOZINHO!</span>
+          </Heading>
+        </div>
         <p className="m-0 mb-[10px] text-[19px] font-extrabold text-lime">
           Chega de recomeçar do zero!
         </p>
@@ -20,7 +25,7 @@ export const DuvidasSection = () => {
 
       {/* App screenshot */}
       <img
-        src="/assets/celular.png"
+        src={cellphone}
         alt="Aplicativo Clínica Lifts"
         className="w-[96%] h-auto block mx-auto my-[18px] mb-[30px]"
       />
@@ -40,6 +45,7 @@ export const DuvidasSection = () => {
             </div>
           </Reveal>
         ))}
+      </div>
       </div>
     </section>
   )

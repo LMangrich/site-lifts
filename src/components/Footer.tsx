@@ -14,8 +14,7 @@ export const Footer = () => {
       <img
         src="/assets/logo.png"
         alt="Clínica Lifts"
-        className="w-[84px] h-auto mb-[14px] opacity-90"
-        style={{ filter: 'brightness(0) invert(1)' }}
+        className="w-[84px] h-auto mb-[14px] opacity-90 brightness-0 invert"
       />
       <nav className="flex flex-wrap justify-center gap-[8px_14px] text-[11px] font-bold tracking-[1.5px] uppercase mb-[18px]">
         {NAV_LINKS.map((link, i) => (

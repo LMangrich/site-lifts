@@ -1,4 +1,4 @@
-import type { TeamMember, FaqItem, Result } from './types'
+import type { TeamMember, FaqItem, Result, ObjetivoOption, OrcamentoOption, FormField } from '../../../types/types'
 
 export const CONTACT = {
   phone: '(11) 99999-0000',
@@ -12,7 +12,7 @@ export const TEAM: TeamMember[] = [
     name: 'Eduarda',
     registration: 'Nutricionista · CRN/SC 7678',
     bio: 'Alimentação pensada para o seu corpo, sua rotina e seus objetivos.',
-    image: '/assets/nutri.png',
+    image: '/assets/nutri.webp',
     alt: 'Maria Eduarda',
     photoHeight: '78%',
   },
@@ -21,7 +21,7 @@ export const TEAM: TeamMember[] = [
     name: 'Samuel',
     registration: 'Personal Trainer · CREF 54369-G',
     bio: 'Treino com progressão estruturada, pensado para o seu corpo, sua rotina e seus objetivos.',
-    image: '/assets/samuka.png',
+    image: '/assets/samuka.webp',
     alt: 'Personal Samuel',
     photoHeight: '80%',
   },
@@ -30,7 +30,7 @@ export const TEAM: TeamMember[] = [
     name: 'Lurdes',
     registration: 'Médica · CRM/SC 20675',
     bio: 'Responsável técnica e médica focada em saúde da mulher.',
-    image: '/assets/medica.png',
+    image: '/assets/medica.webp',
     alt: 'Maria de Lurdes',
     photoHeight: '82%',
   },
@@ -39,7 +39,7 @@ export const TEAM: TeamMember[] = [
     name: 'Guilherme',
     registration: 'Médico · CRM/RS 53614',
     bio: 'Plano terapêutico individual. Prescrições e exames que respeitam quem você é.',
-    image: '/assets/medico.png',
+    image: '/assets/medico.webp',
     alt: 'Médico Guilherme',
     photoHeight: '84%',
   },
@@ -49,13 +49,30 @@ export const RESULTS: Result[] = [
   {
     beforeLabel: '117kg · 43% BF',
     afterLabel: '88kg · 18% BF',
-    image: '/assets/depois1.png',
+    image: '/assets/eu_n_tido_meio_maromba.webp',
   },
   {
     beforeLabel: '117kg · 43% BF',
     afterLabel: '88kg · 18% BF',
-    image: '/assets/depois2.png',
+    image: '/assets/eu_serio_olhando_pc_mao_no_queixo.webp',
   },
+]
+
+export const OBJETIVOS: ObjetivoOption[] = [
+  { value: 'emagrecimento', icon: 'directions_run', label: 'EMAGRECIMENTO' },
+  { value: 'massa', icon: 'exercise', label: 'MASSA MUSCULAR' },
+  { value: 'duas', icon: 'monitoring', label: 'AS DUAS OPÇÕES' },
+]
+
+export const ORCAMENTOS: OrcamentoOption[] = [
+  { value: 1, label: 'ESTÁ DENTRO DO MEU ORÇAMENTO' },
+  { value: 2, label: 'NÃO ESTÁ DENTRO DO MEU ORÇAMENTO' },
+]
+
+export const PLANOS_FORM_FIELDS: FormField[] = [
+  { name: 'nome', type: 'text', placeholder: 'Seu NOME COMPLETO' },
+  { name: 'whatsapp', type: 'tel', placeholder: 'Whatsapp com DDD' },
+  { name: 'email', type: 'email', placeholder: 'Seu e-mail' },
 ]
 
 export const DUVIDAS_STEPS = [
