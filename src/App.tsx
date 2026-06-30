@@ -3,7 +3,7 @@ import { HomePage } from './app/home/page'
 
 export const App = () => {
   return (
-    <Router>
+    <Router basename="/site-lifts/">
       <Routes>
         <Route path="/" element={<HomePage />} />
       </Routes>
