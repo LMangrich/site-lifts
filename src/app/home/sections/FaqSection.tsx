@@ -1,8 +1,7 @@
 import { useState } from 'react'
-import { FAQS, CONTACT } from '../data/content.data'
+import { FAQS } from '../data/content.data'
 import { Reveal } from '../../../components/Reveal'
 import { Sym } from '../../../components/Sym'
-import { Checker } from '../../../components/Checker'
 import { Heading } from '../../../components/Heading'
 
 export const FaqSection = () => {
@@ -13,7 +12,8 @@ export const FaqSection = () => {
 
   return (
     <>
-      <section id="contato" className="bg-teal px-[24px] pt-[34px] pb-[10px]">
+      <section id="contato" className="bg-teal pt-[34px] pb-[10px]">
+        <div className="max-w-5xl mx-auto px-10">
         <Reveal>
           <div className="inline-block bg-lime px-[14px] py-[7px] rounded-[7px] mb-[16px]">
             <span className="text-[12px] font-black tracking-[1.5px] text-teal">
@@ -71,26 +71,8 @@ export const FaqSection = () => {
             )
           })}
         </div>
+        </div>
       </section>
-
-      {/* Bottom CTA */}
-      <Checker as="section" className="pt-[30px] flex flex-col items-center overflow-hidden">
-        <a
-          href={CONTACT.whatsapp}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="no-underline bg-lime rounded-[13px] px-[26px] py-[17px] text-[17px] font-black tracking-[.5px] text-teal flex items-center gap-[10px] mb-[10px]"
-        >
-          <Sym name="bolt" className="text-[22px]" />
-          QUERO COMEÇAR AGORA
-        </a>
-        <img
-          src="/assets/faq-man.png"
-          alt=""
-          loading="lazy"
-          className="w-full h-auto block mt-[8px]"
-        />
-      </Checker>
     </>
   )
 }

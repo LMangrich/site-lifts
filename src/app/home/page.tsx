@@ -1,13 +1,13 @@
 import { Header } from '../../components/Header'
-// import { Footer } from '../../components/Footer'
+import { Footer } from '../../components/Footer'
 import { HeroSection } from './sections/HeroSection'
 import { PlanosSection } from './sections/PlanosSection'
-// import { ResultadosSection } from './sections/ResultadosSection'
-// import { DuvidasSection } from './sections/DuvidasSection'
-// import { EquipeSection } from './sections/EquipeSection'
-// import { DepoimentosSection } from './sections/DepoimentosSection'
-// import { CtaSection } from './sections/CtaSection'
-// import { FaqSection } from './sections/FaqSection'
+import { ResultadosSection } from './sections/ResultadosSection'
+import { DuvidasSection } from './sections/DuvidasSection'
+import { EquipeSection } from './sections/EquipeSection'
+import { DepoimentosSection } from './sections/DepoimentosSection'
+import { CtaSection } from './sections/CtaSection'
+import { FaqSection } from './sections/FaqSection'
 
 export const HomePage = () => {
   return (
@@ -17,15 +17,14 @@ export const HomePage = () => {
         <main className="bg-teal">
           <HeroSection />
            <PlanosSection />
-          {/*
-          <ResultadosSection />
-          <DuvidasSection />
+           <ResultadosSection />
+           <DuvidasSection />
           <EquipeSection />
           <DepoimentosSection />
           <CtaSection />
-          <FaqSection /> */}
+          <FaqSection />
         </main>
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </>
   )

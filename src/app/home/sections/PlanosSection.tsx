@@ -18,7 +18,7 @@ export const PlanosSection = () => {
   }
 
   return (
-    <section id="planos" className="relative isolate min-h-screen max-w-5xl mx-auto px-10 pb-0">
+    <section id="planos" className="relative isolate max-w-5xl mx-auto px-10 pb-0">
       <GrafismoAzulEscuroIcon className="absolute left-1/2 translate-y-8 -translate-x-1/2 w-screen h-[550px] -z-10 fill-[#3b5867]" />
       <p className="text-[25px] -rotate-[4deg] mt-10 md:mt-0 mb-10 font-extrabold tracking-[2px] text-lime">
         #FORMULÁRIO
