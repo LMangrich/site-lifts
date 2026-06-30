@@ -47,7 +47,7 @@ export const HeroSection = () => {
         </div>
 
         <div className="relative self-stretch overflow-hidden flex justify-center items-end min-h-[260px] md:min-h-0">
-          <GrafismoAzulEscuroIcon className="absolute bottom-0" />
+          <GrafismoAzulEscuroIcon className="absolute bottom-0 w-screen h-[360px] fill-[#002539]" />
           <img src={homemRindo} alt="Paciente Clínica Lifts" className="relative z-20 max-h-[400px] md:max-h-none object-contain" />
         </div>
       </div>

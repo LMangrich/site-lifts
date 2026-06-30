@@ -1,4 +1,4 @@
-import type { TeamMember, FaqItem, Result, ObjetivoOption, OrcamentoOption, FormField } from './types'
+import type { TeamMember, FaqItem, Result, ObjetivoOption, OrcamentoOption, FormField } from '../../../types/types'
 
 export const CONTACT = {
   phone: '(11) 99999-0000',

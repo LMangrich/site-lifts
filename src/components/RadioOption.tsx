@@ -11,10 +11,8 @@ interface RadioOptionProps {
 export const RadioOption = ({ selected, onClick, label, icon }: RadioOptionProps) => {
   const compact = !icon
   return (
-    <div
-      onClick={onClick}
-      className={cn(
-        'flex items-center gap-[14px] border-2 border-[#2f5063] rounded-[13px] px-[18px] cursor-pointer',
+    <div onClick={onClick} className={cn(
+        'flex items-center gap-[14px] border-2 border-lime/40 rounded-[10px] px-[18px] cursor-pointer',
         compact ? 'py-[14px]' : 'py-[15px]',
       )}
     >
@@ -25,7 +23,7 @@ export const RadioOption = ({ selected, onClick, label, icon }: RadioOptionProps
         )}
       >
         <span
-          className={cn('rounded-full transition-colors', compact ? 'w-[10px] h-[10px]' : 'w-[11px] h-[11px]')}
+          className="w-full h-full rounded-full transition-colors"
           style={{ background: selected ? '#cbca3f' : 'transparent' }}
         />
       </span>

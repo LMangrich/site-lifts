@@ -16,6 +16,8 @@ export default {
         mist: '#cdd7dc',
         mistLight: '#aebcc4',
         outerBg: '#001620',
+        formCard: '#32302e',
+        inputColor: '#554945',
       },
       backgroundImage: {
         checker:
@@ -42,7 +44,7 @@ export default {
     },
   },
   plugins: [
-    plugin(({ addBase, addComponents, addUtilities, theme }) => {
+    plugin(({ addBase, addUtilities, theme }) => {
       addBase({
         '*': { boxSizing: 'border-box' },
         html: { scrollBehavior: 'smooth' },
@@ -56,25 +58,6 @@ export default {
         'h1, h2, h3': { margin: '0' },
         a: { textDecoration: 'none', color: 'inherit' },
         'input, textarea': { fontFamily: theme('fontFamily.sans') },
-      })
-
-      addComponents({
-        '.form-input': {
-          width: '100%',
-          backgroundColor: theme('colors.tealInput'),
-          border: '1px solid #2a4a59',
-          borderRadius: '11px',
-          paddingInline: '18px',
-          paddingBlock: '17px',
-          fontSize: '15px',
-          fontWeight: '600',
-          color: '#fff',
-          outline: 'none',
-          transitionProperty: 'border-color',
-          transitionDuration: '200ms',
-          '&:focus': { borderColor: '#cbca3f' },
-          '&::placeholder': { color: 'rgba(255, 255, 255, 0.35)' },
-        },
       })
 
       addUtilities({

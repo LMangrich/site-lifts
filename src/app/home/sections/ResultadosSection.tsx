@@ -1,4 +1,4 @@
-import { RESULTS } from '../data/content'
+import { RESULTS } from '../data/content.data'
 import { Reveal } from '../../../components/Reveal'
 import { Heading } from '../../../components/Heading'
 

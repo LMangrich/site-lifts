@@ -1,4 +1,4 @@
-import { TEAM } from '../data/content'
+import { TEAM } from '../data/content.data'
 import { Checker } from '../../../components/Checker'
 import { cn } from '../../../utils/cn'
 import { Heading } from '../../../components/Heading'

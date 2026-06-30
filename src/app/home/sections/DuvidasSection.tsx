@@ -1,5 +1,5 @@
 import { Reveal } from '../../../components/Reveal'
-import { DUVIDAS_STEPS } from '../data/content'
+import { DUVIDAS_STEPS } from '../data/content.data'
 import { Heading } from '../../../components/Heading'
 
 export const DuvidasSection = () => {

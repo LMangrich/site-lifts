@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 import { Sym } from './Sym'
-import { NAV_LINKS } from './navLinks'
+import { NAV_LINKS } from '../app/home/data/navLinks.data'
 
 interface SideMenuProps {
   isOpen: boolean

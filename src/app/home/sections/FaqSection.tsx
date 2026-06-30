@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { FAQS, CONTACT } from '../data/content'
+import { FAQS, CONTACT } from '../data/content.data'
 import { Reveal } from '../../../components/Reveal'
 import { Sym } from '../../../components/Sym'
 import { Checker } from '../../../components/Checker'
