@@ -3,6 +3,7 @@ import { FAQS, CONTACT } from '../data/content'
 import { Reveal } from '../../../components/Reveal'
 import { Sym } from '../../../components/Sym'
 import { Checker } from '../../../components/Checker'
+import { Heading } from '../../../components/Heading'
 
 export const FaqSection = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null)
@@ -19,10 +20,10 @@ export const FaqSection = () => {
               PERGUNTAS FREQUENTES
             </span>
           </div>
-          <h2 className="m-0 mb-[22px] leading-[1.04]">
+          <Heading level={2} className="mb-[22px]">
             <span className="block text-[30px] font-semibold text-lime">Tudo o que você</span>
             <span className="block text-[40px] font-black text-lime">precisa saber</span>
-          </h2>
+          </Heading>
         </Reveal>
 
         <div className="flex flex-col gap-[13px]">

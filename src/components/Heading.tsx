@@ -2,6 +2,7 @@ import type { ReactNode } from 'react'
 import { cn } from '../utils/cn'
 
 type HeadingLevel = 1 | 2 | 3 | 4 | 5 | 6
+type HeadingColor = 'snow' | 'teal' | 'lime' | 'white'
 
 const TAGS = { 1: 'h1', 2: 'h2', 3: 'h3', 4: 'h4', 5: 'h5', 6: 'h6' } as const
 
@@ -14,13 +15,26 @@ const LEVEL_STYLES: Record<HeadingLevel, string> = {
   6: 'text-[14px] font-bold leading-[1.2]',
 }
 
+const COLOR_STYLES: Record<HeadingColor, string> = {
+  snow: 'text-snow',
+  teal: 'text-teal',
+  lime: 'text-lime',
+  white: 'text-white',
+}
+
 interface HeadingProps {
   level?: HeadingLevel
+  color?: HeadingColor
+  italic?: boolean
   children: ReactNode
   className?: string
 }
 
-export const Heading = ({ level = 1, children, className }: HeadingProps) => {
+export const Heading = ({ level = 1, color = 'snow', italic = false, children, className }: HeadingProps) => {
   const Tag = TAGS[level]
-  return <Tag className={cn(LEVEL_STYLES[level], 'text-snow', className)}>{children}</Tag>
+  return (
+    <Tag className={cn('m-0', LEVEL_STYLES[level], COLOR_STYLES[color], italic && 'italic', className)}>
+      {children}
+    </Tag>
+  )
 }

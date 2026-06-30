@@ -1,4 +1,4 @@
-import type { TeamMember, FaqItem, Result } from './types'
+import type { TeamMember, FaqItem, Result, ObjetivoOption, OrcamentoOption, FormField } from './types'
 
 export const CONTACT = {
   phone: '(11) 99999-0000',
@@ -56,6 +56,23 @@ export const RESULTS: Result[] = [
     afterLabel: '88kg · 18% BF',
     image: '/assets/depois2.png',
   },
+]
+
+export const OBJETIVOS: ObjetivoOption[] = [
+  { value: 'emagrecimento', icon: 'directions_run', label: 'EMAGRECIMENTO' },
+  { value: 'massa', icon: 'exercise', label: 'MASSA MUSCULAR' },
+  { value: 'duas', icon: 'monitoring', label: 'AS DUAS OPÇÕES' },
+]
+
+export const ORCAMENTOS: OrcamentoOption[] = [
+  { value: 1, label: 'ESTÁ DENTRO DO MEU ORÇAMENTO' },
+  { value: 2, label: 'NÃO ESTÁ DENTRO DO MEU ORÇAMENTO' },
+]
+
+export const PLANOS_FORM_FIELDS: FormField[] = [
+  { name: 'nome', type: 'text', placeholder: 'Seu NOME COMPLETO' },
+  { name: 'whatsapp', type: 'tel', placeholder: 'Whatsapp com DDD' },
+  { name: 'email', type: 'email', placeholder: 'Seu e-mail' },
 ]
 
 export const DUVIDAS_STEPS = [

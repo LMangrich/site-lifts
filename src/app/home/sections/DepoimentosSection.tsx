@@ -1,4 +1,5 @@
 import { Reveal } from '../../../components/Reveal'
+import { Heading } from '../../../components/Heading'
 
 const DEPO_IMAGES = [
   '/assets/depo2.png',
@@ -19,10 +20,10 @@ export const DepoimentosSection = () => {
               O QUE NOSSOS PACIENTES DIZEM
             </span>
           </div>
-          <h2 className="m-0 leading-[1.04]">
+          <Heading level={2}>
             <span className="block text-[29px] font-semibold text-teal">Quem já começou,</span>
             <span className="block text-[36px] font-black italic text-teal">não para mais</span>
-          </h2>
+          </Heading>
         </Reveal>
       </section>
 

@@ -1,23 +1,24 @@
 import { TEAM } from '../data/content'
 import { Checker } from '../../../components/Checker'
 import { cn } from '../../../utils/cn'
+import { Heading } from '../../../components/Heading'
 
 export const EquipeSection = () => {
   return (
     <>
       {/* Intro — lime background */}
       <section id="equipe" className="bg-lime px-[26px] pt-[32px] pb-[26px]">
-        <h3 className="m-0 mb-[12px] text-[27px] font-black italic text-teal leading-[1.02]">
+        <Heading level={3} color="teal" italic className="mb-[12px] leading-[1.02]">
           Três profissionais.<br />Um objetivo.
-        </h3>
+        </Heading>
         <p className="m-0 mb-[30px] text-[15px] font-semibold leading-[1.5] text-[#1d3d2e]">
           Já é difícil achar um profissional que trabalhe com ciência. Imagina três, de áreas
           diferentes, completamente alinhados entre si.
         </p>
-        <h2 className="m-0 leading-[1.02]">
+        <Heading level={2} className="leading-[1.02]">
           <span className="block text-[30px] font-semibold text-teal">Conheça a</span>
           <span className="block text-[42px] font-black italic text-teal">nossa equipe!</span>
-        </h2>
+        </Heading>
       </section>
 
       {/* Team cards — dark checker background */}

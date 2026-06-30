@@ -1,5 +1,6 @@
 import { RESULTS } from '../data/content'
 import { Reveal } from '../../../components/Reveal'
+import { Heading } from '../../../components/Heading'
 
 const ResultBadge = ({ label }: { label: string }) => (
   <span className="absolute bottom-[10px] left-1/2 -translate-x-1/2 bg-lime text-teal text-[11px] font-black tracking-[.3px] px-[8px] py-[4px] rounded-[5px] whitespace-nowrap">
@@ -34,9 +35,9 @@ export const ResultadosSection = () => {
     <section id="resultados" className="bg-lime px-[24px] pt-[34px] pb-[40px]">
       <Reveal>
         <p className="m-0 text-[21px] font-bold tracking-[1px] text-teal">CONHEÇA NOSSOS</p>
-        <h2 className="m-0 mb-[22px] text-[46px] font-black tracking-[.5px] text-teal leading-[.95]">
+        <Heading level={2} color="teal" className="mb-[22px] text-[46px] font-black tracking-[.5px] leading-[.95]">
           RESULTADOS
-        </h2>
+        </Heading>
       </Reveal>
 
       <div className="flex flex-col gap-[20px]">

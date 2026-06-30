@@ -8,6 +8,26 @@ export interface TeamMember {
   photoHeight: string
 }
 
+export type ObjetivoValue = 'emagrecimento' | 'massa' | 'duas'
+export type OrcamentoValue = 1 | 2
+
+export interface ObjetivoOption {
+  value: ObjetivoValue
+  label: string
+  icon: string
+}
+
+export interface OrcamentoOption {
+  value: OrcamentoValue
+  label: string
+}
+
+export interface FormField {
+  name: string
+  type: string
+  placeholder: string
+}
+
 export interface FaqItem {
   icon: string
   q: string

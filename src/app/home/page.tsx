@@ -1,7 +1,7 @@
 import { Header } from '../../components/Header'
 // import { Footer } from '../../components/Footer'
 import { HeroSection } from './sections/HeroSection'
-// import { PlanosSection } from './sections/PlanosSection'
+import { PlanosSection } from './sections/PlanosSection'
 // import { ResultadosSection } from './sections/ResultadosSection'
 // import { DuvidasSection } from './sections/DuvidasSection'
 // import { EquipeSection } from './sections/EquipeSection'
@@ -14,9 +14,10 @@ export const HomePage = () => {
     <>
       <div>
         <Header />
-        <main>
+        <main className="bg-teal">
           <HeroSection />
-          {/* <PlanosSection />
+           <PlanosSection />
+          {/*
           <ResultadosSection />
           <DuvidasSection />
           <EquipeSection />
