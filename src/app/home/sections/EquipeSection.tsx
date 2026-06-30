@@ -1,5 +1,6 @@
 import { TEAM } from '../data/content'
-import { CHECKER } from '../../../utils/styles'
+import { Checker } from '../../../components/Checker'
+import { cn } from '../../../utils/cn'
 
 export const EquipeSection = () => {
   return (
@@ -22,13 +23,9 @@ export const EquipeSection = () => {
       {/* Team cards — dark checker background */}
       <section className="bg-teal flex flex-col">
         {TEAM.map((member, i) => (
-          <div
+          <Checker
             key={member.name}
-            className="relative h-[420px] overflow-hidden"
-            style={{
-              ...CHECKER,
-              ...(i > 0 ? { borderTop: '2px solid #cbca3f' } : {}),
-            }}
+            className={cn('relative h-[420px] overflow-hidden', i > 0 && 'border-t-2 border-[#cbca3f]')}
           >
             {/* Name overlay */}
             <div className="absolute top-[20px] left-[24px] z-10">
@@ -56,7 +53,7 @@ export const EquipeSection = () => {
             >
               <p className="m-0 text-[13px] font-semibold leading-[1.4] text-snow">{member.bio}</p>
             </div>
-          </div>
+          </Checker>
         ))}
       </section>
     </>

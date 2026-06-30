@@ -34,8 +34,7 @@ export const DepoimentosSection = () => {
               src={src}
               alt="Depoimento"
               loading="lazy"
-              className="w-full h-auto block"
-              style={{ filter: 'drop-shadow(0 6px 16px rgba(0,0,0,.3))' }}
+              className="w-full h-auto block drop-shadow-[0_6px_16px_rgba(0,0,0,.3)]"
             />
           </Reveal>
         ))}

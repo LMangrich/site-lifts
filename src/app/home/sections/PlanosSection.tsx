@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import { CHECKER } from '../../../utils/styles'
 import { Sym } from '../../../components/Sym'
+import { Checker } from '../../../components/Checker'
 
 type Objetivo = 'emagrecimento' | 'massa' | 'duas' | null
 type Orcamento = 1 | 2 | null
@@ -168,16 +168,13 @@ export const PlanosSection = () => {
       )}
 
       {/* Woman image with checker pattern */}
-      <div
-        className="relative mt-[26px] -mx-[26px] flex justify-center items-end overflow-hidden"
-        style={CHECKER}
-      >
+      <Checker className="relative mt-[26px] -mx-[26px] flex justify-center items-end overflow-hidden">
         <img
           src="/assets/mulher1.png"
           alt=""
           className="w-[90%] h-auto block"
         />
-      </div>
+      </Checker>
     </section>
   )
 }

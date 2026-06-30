@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { FAQS, CONTACT } from '../data/content'
 import { Reveal } from '../../../components/Reveal'
 import { Sym } from '../../../components/Sym'
-import { CHECKER } from '../../../utils/styles'
+import { Checker } from '../../../components/Checker'
 
 export const FaqSection = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null)
@@ -73,10 +73,7 @@ export const FaqSection = () => {
       </section>
 
       {/* Bottom CTA */}
-      <section
-        className="pt-[30px] flex flex-col items-center overflow-hidden"
-        style={CHECKER}
-      >
+      <Checker as="section" className="pt-[30px] flex flex-col items-center overflow-hidden">
         <a
           href={CONTACT.whatsapp}
           target="_blank"
@@ -92,7 +89,7 @@ export const FaqSection = () => {
           loading="lazy"
           className="w-full h-auto block mt-[8px]"
         />
-      </section>
+      </Checker>
     </>
   )
 }
